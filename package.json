@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "npx cypress open",
+    "cypress:record": "npx cypress run --record --key c9ff64dc-a238-418e-b834-1f8c22e664d2"
   },
   "author": "jmeunier",
   "license": "ISC",
