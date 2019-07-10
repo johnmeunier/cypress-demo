@@ -1,4 +1,4 @@
-if(localStorage.getItem('logged') == true){
+if(localStorage.getItem('logged') == "true"){
     //INIT
     const articles = [
         {

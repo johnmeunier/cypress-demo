@@ -5,7 +5,7 @@ context('Nos entités', () => {
       cy.visit('https://group.axa.com/fr/a-propos-d-axa/axa-dans-le-monde')
     })
 
-    xit('should select the correct country when an user interract with the select list', () => {
+    it('should select the correct country when an user interract with the select list', () => {
         const countryCode = 'fr';
         const expectedSelecteColor = "rgb(62, 100, 158)";
         cy.get('.world-map__select')
