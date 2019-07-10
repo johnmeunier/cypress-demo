@@ -1,0 +1,12 @@
+{
+    "articles": [
+        {
+            "title": "Titre de mon 1er article",
+            "content": "Contenu de mon 1er article"
+        },
+        {
+            "title": "Titre de mon 2ème article",
+            "content": "Contenu de mon 2ème article"
+        }
+    ]
+}

@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "npx cypress open",
     "cypress:record": "npx cypress run --record --key c9ff64dc-a238-418e-b834-1f8c22e664d2",
-    "local": "pushd ./local; python -m SimpleHTTPServer 8000"
+    "local": "pushd ./local; python -m SimpleHTTPServer 8000",
+    "api": "./node_modules/.bin/json-server --watch ./db.json"
   },
   "author": "jmeunier",
   "license": "ISC",
   "dependencies": {
-    "cypress": "3.3.2"
+    "cypress": "3.3.2",
+    "json-server": "^0.15.0"
   }
 }

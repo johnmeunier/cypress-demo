@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-context('Login', () => {
+context('Local application', () => {
     beforeEach(() => {
       cy.visit('http://localhost:8000/login.html')
     })
@@ -31,6 +31,13 @@ context('Login', () => {
       cy.get('h1').then(el => {
         assert.equal(el.text(), 'Bad credentials');  // this works but it isn't pretty
       });
+    });
+
+    it('an user should be able to consult articles', () => {
+      cy.login('good');
+      cy.get('article').then( el => {
+        assert.equal(el.length, 2);
+      })
     });
 
     it('an user should be able to publish an article', () => {
